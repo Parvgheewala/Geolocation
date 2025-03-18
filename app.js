@@ -11,7 +11,7 @@ const server = http.createServer(app)
 const io = socketio(server, {
     cors: {
       origin: "*",  // Allow connections from any origin
-      methods: ["GET", "POST"]
+      methods: ["GET", "POST"] //use multiple methods to fetch
     }
   });
 
